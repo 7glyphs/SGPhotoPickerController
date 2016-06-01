@@ -20,6 +20,8 @@
 
 @property (nonatomic, weak) id<SGPhotoPickerControllerDelegate> delegate;
 @property (nonatomic, strong) id object;
+@property (nonatomic, assign) BOOL libraryEnabled;
+@property (nonatomic, assign) BOOL cameraEnabled;
 
 - (instancetype)initWithViewController:(UIViewController *)controller;
 - (void)pickPhoto;

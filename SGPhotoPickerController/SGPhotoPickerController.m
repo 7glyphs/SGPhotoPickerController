@@ -37,6 +37,8 @@
     if (self) {
         self.controller = controller;
         self.canGetFromCamera = [UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera];
+        self.cameraEnabled = YES;
+        self.libraryEnabled = YES;
     }
     return self;
 }
@@ -51,30 +53,42 @@
 
 - (void)pickPhoto {
     [self takeControll];
-    UIAlertController *actionSheet = [UIAlertController alertControllerWithTitle:@"Add photo" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
-    
-    [actionSheet addAction:[UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
-        [self resignControll];
-        [actionSheet dismissViewControllerAnimated:YES completion:^{
-        }];
-    }]];
-    
-    [actionSheet addAction:[UIAlertAction actionWithTitle:@"Photo Library" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
-        [self selectPhoto];
-        [actionSheet dismissViewControllerAnimated:YES completion:^{
-
-        }];
-    }]];
-    
-    if (self.canGetFromCamera) {
+    if (self.libraryEnabled && self.cameraEnabled && self.canGetFromCamera) {
+        UIAlertController *actionSheet = [UIAlertController alertControllerWithTitle:@"Add photo" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
+        
+        [actionSheet addAction:[UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
+            [self resignControll];
+            [actionSheet dismissViewControllerAnimated:YES completion:^{
+            }];
+        }]];
+        
+        [actionSheet addAction:[UIAlertAction actionWithTitle:@"Photo Library" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+            [self selectPhoto];
+            [actionSheet dismissViewControllerAnimated:YES completion:^{
+                
+            }];
+        }]];
+        
         [actionSheet addAction:[UIAlertAction actionWithTitle:@"Camera" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
             [self takePhoto];
             [actionSheet dismissViewControllerAnimated:YES completion:^{
-
+                
             }];
         }]];
+        
+        [self.controller presentViewController:actionSheet animated:YES completion:nil];
     }
-    [self.controller presentViewController:actionSheet animated:YES completion:nil];
+    else {
+        if (self.cameraEnabled && !self.canGetFromCamera) {
+            NSLog(@"Camera source is not available");
+        }
+        else if (self.cameraEnabled && self.canGetFromCamera) {
+            [self takePhoto];
+        }
+        else if (self.libraryEnabled) {
+            [self selectPhoto];
+        }
+    }
 }
 
 - (void)selectPhoto {
