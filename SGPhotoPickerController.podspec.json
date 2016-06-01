@@ -10,7 +10,7 @@
     "tag": "1.1.0"
   },
   "platforms": {
-    "ios": "8.3"
+    "ios": "8.0"
   },
   "source_files": "SGPhotoPickerController/*.{h,m}",
   "requires_arc": true
