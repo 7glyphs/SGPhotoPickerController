@@ -81,6 +81,9 @@
     else {
         if (self.cameraEnabled && !self.canGetFromCamera) {
             NSLog(@"Camera source is not available");
+            if (self.libraryEnabled) {
+                [self selectPhoto];
+            }
         }
         else if (self.cameraEnabled && self.canGetFromCamera) {
             [self takePhoto];
