@@ -8,7 +8,7 @@
 
 #import "SGPhotoPickerController.h"
 
-@interface SGPhotoPickerController () <UIActionSheetDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@interface SGPhotoPickerController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
 @property (nonatomic, assign) BOOL canGetFromCamera;
 @property (nonatomic, strong) UIViewController * controller;
@@ -51,8 +51,30 @@
 
 - (void)pickPhoto {
     [self takeControll];
-    UIActionSheet * actionSheet = [[UIActionSheet alloc] initWithTitle:@"Add photo" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Photo Library", self.canGetFromCamera ? @"Camera" : nil, nil];
-    [actionSheet showInView:self.controller.view];
+    UIAlertController *actionSheet = [UIAlertController alertControllerWithTitle:@"Add photo" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
+    
+    [actionSheet addAction:[UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
+        [self resignControll];
+        [actionSheet dismissViewControllerAnimated:YES completion:^{
+        }];
+    }]];
+    
+    [actionSheet addAction:[UIAlertAction actionWithTitle:@"Photo Library" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        [self selectPhoto];
+        [actionSheet dismissViewControllerAnimated:YES completion:^{
+
+        }];
+    }]];
+    
+    if (self.canGetFromCamera) {
+        [actionSheet addAction:[UIAlertAction actionWithTitle:@"Camera" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+            [self takePhoto];
+            [actionSheet dismissViewControllerAnimated:YES completion:^{
+
+            }];
+        }]];
+    }
+    [self.controller presentViewController:actionSheet animated:YES completion:nil];
 }
 
 - (void)selectPhoto {
@@ -71,23 +93,6 @@
     picker.sourceType = UIImagePickerControllerSourceTypeCamera;
 
     [self.controller presentViewController:picker animated:YES completion:NULL];
-}
-
-#pragma mark - UIActionSheetDelegate
-
-- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
-    if (buttonIndex == 0) {
-        [self selectPhoto];
-    }
-    else if (buttonIndex == 1 && self.canGetFromCamera) {
-        [self takePhoto];
-    }
-}
-
-- (void)actionSheet:(UIActionSheet *)actionSheet willDismissWithButtonIndex:(NSInteger)buttonIndex {
-    if ((buttonIndex == 2 && self.canGetFromCamera) || (buttonIndex == 1 && !self.canGetFromCamera)) {
-        [self resignControll];
-    }
 }
 
 #pragma mark - UIImagePickerControllerDelegate
