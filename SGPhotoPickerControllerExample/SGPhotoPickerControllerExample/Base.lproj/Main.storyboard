@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -8,7 +8,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SGPhotoPickerControllerExample" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -17,33 +17,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nRX-cj-J5J">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DXD-Xg-3PF">
                                 <rect key="frame" x="20" y="536" width="560" height="44"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="egb-Lu-rAV"/>
+                                    <constraint firstAttribute="height" constant="44" id="otH-RH-RFG"/>
                                 </constraints>
                                 <state key="normal" title="Pick photo"/>
                                 <connections>
-                                    <action selector="pickPhotoPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2EU-wb-aVp"/>
+                                    <action selector="pickPhotoPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wuc-Ao-ipC"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zei-Cz-qAU">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DcH-AO-Pmr">
                                 <rect key="frame" x="20" y="40" width="560" height="476"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="nRX-cj-J5J" secondAttribute="trailing" constant="20" id="Ex8-Xt-9kF"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nRX-cj-J5J" secondAttribute="bottom" constant="20" id="IeK-ZH-IC6"/>
-                            <constraint firstItem="Zei-Cz-qAU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="Njn-SG-9Jm"/>
-                            <constraint firstAttribute="trailing" secondItem="Zei-Cz-qAU" secondAttribute="trailing" constant="20" id="UQx-X0-Mtn"/>
-                            <constraint firstItem="nRX-cj-J5J" firstAttribute="top" secondItem="Zei-Cz-qAU" secondAttribute="bottom" constant="20" id="epN-vh-B8c"/>
-                            <constraint firstItem="nRX-cj-J5J" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="gn6-TK-LgW"/>
-                            <constraint firstItem="Zei-Cz-qAU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="xcc-7G-4Xu"/>
+                            <constraint firstItem="DXD-Xg-3PF" firstAttribute="top" secondItem="DcH-AO-Pmr" secondAttribute="bottom" constant="20" id="GD7-lu-5Hp"/>
+                            <constraint firstItem="DXD-Xg-3PF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="SPD-aU-9B5"/>
+                            <constraint firstItem="DcH-AO-Pmr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="jQz-Nr-DgN"/>
+                            <constraint firstAttribute="trailing" secondItem="DXD-Xg-3PF" secondAttribute="trailing" constant="20" id="oBq-wh-5k2"/>
+                            <constraint firstAttribute="trailing" secondItem="DcH-AO-Pmr" secondAttribute="trailing" constant="20" id="ogc-3G-22o"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="DXD-Xg-3PF" secondAttribute="bottom" constant="20" id="wmY-q4-Rg8"/>
+                            <constraint firstItem="DcH-AO-Pmr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="xIW-K9-h5I"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="photoImageView" destination="Zei-Cz-qAU" id="Spr-pC-C6E"/>
+                        <outlet property="photoImageView" destination="DcH-AO-Pmr" id="cPW-DV-Qh2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

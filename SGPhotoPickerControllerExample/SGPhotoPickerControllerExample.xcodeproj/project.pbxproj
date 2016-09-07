@@ -7,71 +7,66 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1EB04A1A1CFE7F7D00A839CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB04A191CFE7F7D00A839CB /* main.m */; };
-		1EB04A1D1CFE7F7D00A839CB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB04A1C1CFE7F7D00A839CB /* AppDelegate.m */; };
-		1EB04A201CFE7F7D00A839CB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB04A1F1CFE7F7D00A839CB /* ViewController.m */; };
-		1EB04A231CFE7F7D00A839CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EB04A211CFE7F7D00A839CB /* Main.storyboard */; };
-		1EB04A251CFE7F7D00A839CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EB04A241CFE7F7D00A839CB /* Assets.xcassets */; };
-		1EB04A281CFE7F7D00A839CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EB04A261CFE7F7D00A839CB /* LaunchScreen.storyboard */; };
-		1EB04A331CFE7F7D00A839CB /* SGPhotoPickerControllerExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB04A321CFE7F7D00A839CB /* SGPhotoPickerControllerExampleTests.m */; };
-		1EB04A3E1CFE7F7D00A839CB /* SGPhotoPickerControllerExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB04A3D1CFE7F7D00A839CB /* SGPhotoPickerControllerExampleUITests.m */; };
-		1EB04A4E1CFE802D00A839CB /* SGPhotoPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB04A4D1CFE802D00A839CB /* SGPhotoPickerController.m */; };
+		1E124F161D7FAA59005FD093 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E124F151D7FAA59005FD093 /* AppDelegate.swift */; };
+		1E124F181D7FAA59005FD093 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E124F171D7FAA59005FD093 /* ViewController.swift */; };
+		1E124F1B1D7FAA59005FD093 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E124F191D7FAA59005FD093 /* Main.storyboard */; };
+		1E124F1D1D7FAA59005FD093 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E124F1C1D7FAA59005FD093 /* Assets.xcassets */; };
+		1E124F201D7FAA59005FD093 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E124F1E1D7FAA59005FD093 /* LaunchScreen.storyboard */; };
+		1E124F2B1D7FAA59005FD093 /* SGPhotoPickerControllerExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E124F2A1D7FAA59005FD093 /* SGPhotoPickerControllerExampleTests.swift */; };
+		1E124F361D7FAA59005FD093 /* SGPhotoPickerControllerExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E124F351D7FAA59005FD093 /* SGPhotoPickerControllerExampleUITests.swift */; };
+		1E124F491D7FABA3005FD093 /* SGPhotoPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E124F471D7FABA3005FD093 /* SGPhotoPickerController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1EB04A2F1CFE7F7D00A839CB /* PBXContainerItemProxy */ = {
+		1E124F271D7FAA59005FD093 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 1EB04A0D1CFE7F7D00A839CB /* Project object */;
+			containerPortal = 1E124F0A1D7FAA59005FD093 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1EB04A141CFE7F7D00A839CB;
+			remoteGlobalIDString = 1E124F111D7FAA59005FD093;
 			remoteInfo = SGPhotoPickerControllerExample;
 		};
-		1EB04A3A1CFE7F7D00A839CB /* PBXContainerItemProxy */ = {
+		1E124F321D7FAA59005FD093 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 1EB04A0D1CFE7F7D00A839CB /* Project object */;
+			containerPortal = 1E124F0A1D7FAA59005FD093 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1EB04A141CFE7F7D00A839CB;
+			remoteGlobalIDString = 1E124F111D7FAA59005FD093;
 			remoteInfo = SGPhotoPickerControllerExample;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1EB04A151CFE7F7D00A839CB /* SGPhotoPickerControllerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SGPhotoPickerControllerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1EB04A191CFE7F7D00A839CB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1EB04A1B1CFE7F7D00A839CB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		1EB04A1C1CFE7F7D00A839CB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1EB04A1E1CFE7F7D00A839CB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1EB04A1F1CFE7F7D00A839CB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		1EB04A221CFE7F7D00A839CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1EB04A241CFE7F7D00A839CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1EB04A271CFE7F7D00A839CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		1EB04A291CFE7F7D00A839CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1EB04A2E1CFE7F7D00A839CB /* SGPhotoPickerControllerExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SGPhotoPickerControllerExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1EB04A321CFE7F7D00A839CB /* SGPhotoPickerControllerExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGPhotoPickerControllerExampleTests.m; sourceTree = "<group>"; };
-		1EB04A341CFE7F7D00A839CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1EB04A391CFE7F7D00A839CB /* SGPhotoPickerControllerExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SGPhotoPickerControllerExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1EB04A3D1CFE7F7D00A839CB /* SGPhotoPickerControllerExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGPhotoPickerControllerExampleUITests.m; sourceTree = "<group>"; };
-		1EB04A3F1CFE7F7D00A839CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1EB04A4C1CFE802D00A839CB /* SGPhotoPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGPhotoPickerController.h; sourceTree = "<group>"; };
-		1EB04A4D1CFE802D00A839CB /* SGPhotoPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGPhotoPickerController.m; sourceTree = "<group>"; };
+		1E124F121D7FAA59005FD093 /* SGPhotoPickerControllerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SGPhotoPickerControllerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E124F151D7FAA59005FD093 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1E124F171D7FAA59005FD093 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1E124F1A1D7FAA59005FD093 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1E124F1C1D7FAA59005FD093 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1E124F1F1D7FAA59005FD093 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1E124F211D7FAA59005FD093 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E124F261D7FAA59005FD093 /* SGPhotoPickerControllerExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SGPhotoPickerControllerExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E124F2A1D7FAA59005FD093 /* SGPhotoPickerControllerExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGPhotoPickerControllerExampleTests.swift; sourceTree = "<group>"; };
+		1E124F2C1D7FAA59005FD093 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E124F311D7FAA59005FD093 /* SGPhotoPickerControllerExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SGPhotoPickerControllerExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E124F351D7FAA59005FD093 /* SGPhotoPickerControllerExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGPhotoPickerControllerExampleUITests.swift; sourceTree = "<group>"; };
+		1E124F371D7FAA59005FD093 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E124F471D7FABA3005FD093 /* SGPhotoPickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SGPhotoPickerController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1EB04A121CFE7F7D00A839CB /* Frameworks */ = {
+		1E124F0F1D7FAA59005FD093 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1EB04A2B1CFE7F7D00A839CB /* Frameworks */ = {
+		1E124F231D7FAA59005FD093 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1EB04A361CFE7F7D00A839CB /* Frameworks */ = {
+		1E124F2E1D7FAA59005FD093 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -81,74 +76,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1EB04A0C1CFE7F7D00A839CB = {
+		1E124F091D7FAA59005FD093 = {
 			isa = PBXGroup;
 			children = (
-				1EB04A171CFE7F7D00A839CB /* SGPhotoPickerControllerExample */,
-				1EB04A311CFE7F7D00A839CB /* SGPhotoPickerControllerExampleTests */,
-				1EB04A3C1CFE7F7D00A839CB /* SGPhotoPickerControllerExampleUITests */,
-				1EB04A161CFE7F7D00A839CB /* Products */,
+				1E124F141D7FAA59005FD093 /* SGPhotoPickerControllerExample */,
+				1E124F291D7FAA59005FD093 /* SGPhotoPickerControllerExampleTests */,
+				1E124F341D7FAA59005FD093 /* SGPhotoPickerControllerExampleUITests */,
+				1E124F131D7FAA59005FD093 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		1EB04A161CFE7F7D00A839CB /* Products */ = {
+		1E124F131D7FAA59005FD093 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1EB04A151CFE7F7D00A839CB /* SGPhotoPickerControllerExample.app */,
-				1EB04A2E1CFE7F7D00A839CB /* SGPhotoPickerControllerExampleTests.xctest */,
-				1EB04A391CFE7F7D00A839CB /* SGPhotoPickerControllerExampleUITests.xctest */,
+				1E124F121D7FAA59005FD093 /* SGPhotoPickerControllerExample.app */,
+				1E124F261D7FAA59005FD093 /* SGPhotoPickerControllerExampleTests.xctest */,
+				1E124F311D7FAA59005FD093 /* SGPhotoPickerControllerExampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1EB04A171CFE7F7D00A839CB /* SGPhotoPickerControllerExample */ = {
+		1E124F141D7FAA59005FD093 /* SGPhotoPickerControllerExample */ = {
 			isa = PBXGroup;
 			children = (
-				1EB04A4B1CFE802D00A839CB /* SGPhotoPickerController */,
-				1EB04A1B1CFE7F7D00A839CB /* AppDelegate.h */,
-				1EB04A1C1CFE7F7D00A839CB /* AppDelegate.m */,
-				1EB04A1E1CFE7F7D00A839CB /* ViewController.h */,
-				1EB04A1F1CFE7F7D00A839CB /* ViewController.m */,
-				1EB04A211CFE7F7D00A839CB /* Main.storyboard */,
-				1EB04A241CFE7F7D00A839CB /* Assets.xcassets */,
-				1EB04A261CFE7F7D00A839CB /* LaunchScreen.storyboard */,
-				1EB04A291CFE7F7D00A839CB /* Info.plist */,
-				1EB04A181CFE7F7D00A839CB /* Supporting Files */,
+				1E124F441D7FABA3005FD093 /* SGPhotoPickerController */,
+				1E124F151D7FAA59005FD093 /* AppDelegate.swift */,
+				1E124F171D7FAA59005FD093 /* ViewController.swift */,
+				1E124F191D7FAA59005FD093 /* Main.storyboard */,
+				1E124F1C1D7FAA59005FD093 /* Assets.xcassets */,
+				1E124F1E1D7FAA59005FD093 /* LaunchScreen.storyboard */,
+				1E124F211D7FAA59005FD093 /* Info.plist */,
 			);
 			path = SGPhotoPickerControllerExample;
 			sourceTree = "<group>";
 		};
-		1EB04A181CFE7F7D00A839CB /* Supporting Files */ = {
+		1E124F291D7FAA59005FD093 /* SGPhotoPickerControllerExampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				1EB04A191CFE7F7D00A839CB /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		1EB04A311CFE7F7D00A839CB /* SGPhotoPickerControllerExampleTests */ = {
-			isa = PBXGroup;
-			children = (
-				1EB04A321CFE7F7D00A839CB /* SGPhotoPickerControllerExampleTests.m */,
-				1EB04A341CFE7F7D00A839CB /* Info.plist */,
+				1E124F2A1D7FAA59005FD093 /* SGPhotoPickerControllerExampleTests.swift */,
+				1E124F2C1D7FAA59005FD093 /* Info.plist */,
 			);
 			path = SGPhotoPickerControllerExampleTests;
 			sourceTree = "<group>";
 		};
-		1EB04A3C1CFE7F7D00A839CB /* SGPhotoPickerControllerExampleUITests */ = {
+		1E124F341D7FAA59005FD093 /* SGPhotoPickerControllerExampleUITests */ = {
 			isa = PBXGroup;
 			children = (
-				1EB04A3D1CFE7F7D00A839CB /* SGPhotoPickerControllerExampleUITests.m */,
-				1EB04A3F1CFE7F7D00A839CB /* Info.plist */,
+				1E124F351D7FAA59005FD093 /* SGPhotoPickerControllerExampleUITests.swift */,
+				1E124F371D7FAA59005FD093 /* Info.plist */,
 			);
 			path = SGPhotoPickerControllerExampleUITests;
 			sourceTree = "<group>";
 		};
-		1EB04A4B1CFE802D00A839CB /* SGPhotoPickerController */ = {
+		1E124F441D7FABA3005FD093 /* SGPhotoPickerController */ = {
 			isa = PBXGroup;
 			children = (
-				1EB04A4C1CFE802D00A839CB /* SGPhotoPickerController.h */,
-				1EB04A4D1CFE802D00A839CB /* SGPhotoPickerController.m */,
+				1E124F471D7FABA3005FD093 /* SGPhotoPickerController.swift */,
 			);
 			name = SGPhotoPickerController;
 			path = ../../SGPhotoPickerController;
@@ -157,13 +140,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1EB04A141CFE7F7D00A839CB /* SGPhotoPickerControllerExample */ = {
+		1E124F111D7FAA59005FD093 /* SGPhotoPickerControllerExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1EB04A421CFE7F7D00A839CB /* Build configuration list for PBXNativeTarget "SGPhotoPickerControllerExample" */;
+			buildConfigurationList = 1E124F3A1D7FAA59005FD093 /* Build configuration list for PBXNativeTarget "SGPhotoPickerControllerExample" */;
 			buildPhases = (
-				1EB04A111CFE7F7D00A839CB /* Sources */,
-				1EB04A121CFE7F7D00A839CB /* Frameworks */,
-				1EB04A131CFE7F7D00A839CB /* Resources */,
+				1E124F0E1D7FAA59005FD093 /* Sources */,
+				1E124F0F1D7FAA59005FD093 /* Frameworks */,
+				1E124F101D7FAA59005FD093 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -171,68 +154,69 @@
 			);
 			name = SGPhotoPickerControllerExample;
 			productName = SGPhotoPickerControllerExample;
-			productReference = 1EB04A151CFE7F7D00A839CB /* SGPhotoPickerControllerExample.app */;
+			productReference = 1E124F121D7FAA59005FD093 /* SGPhotoPickerControllerExample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		1EB04A2D1CFE7F7D00A839CB /* SGPhotoPickerControllerExampleTests */ = {
+		1E124F251D7FAA59005FD093 /* SGPhotoPickerControllerExampleTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1EB04A451CFE7F7D00A839CB /* Build configuration list for PBXNativeTarget "SGPhotoPickerControllerExampleTests" */;
+			buildConfigurationList = 1E124F3D1D7FAA59005FD093 /* Build configuration list for PBXNativeTarget "SGPhotoPickerControllerExampleTests" */;
 			buildPhases = (
-				1EB04A2A1CFE7F7D00A839CB /* Sources */,
-				1EB04A2B1CFE7F7D00A839CB /* Frameworks */,
-				1EB04A2C1CFE7F7D00A839CB /* Resources */,
+				1E124F221D7FAA59005FD093 /* Sources */,
+				1E124F231D7FAA59005FD093 /* Frameworks */,
+				1E124F241D7FAA59005FD093 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1EB04A301CFE7F7D00A839CB /* PBXTargetDependency */,
+				1E124F281D7FAA59005FD093 /* PBXTargetDependency */,
 			);
 			name = SGPhotoPickerControllerExampleTests;
 			productName = SGPhotoPickerControllerExampleTests;
-			productReference = 1EB04A2E1CFE7F7D00A839CB /* SGPhotoPickerControllerExampleTests.xctest */;
+			productReference = 1E124F261D7FAA59005FD093 /* SGPhotoPickerControllerExampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		1EB04A381CFE7F7D00A839CB /* SGPhotoPickerControllerExampleUITests */ = {
+		1E124F301D7FAA59005FD093 /* SGPhotoPickerControllerExampleUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1EB04A481CFE7F7D00A839CB /* Build configuration list for PBXNativeTarget "SGPhotoPickerControllerExampleUITests" */;
+			buildConfigurationList = 1E124F401D7FAA59005FD093 /* Build configuration list for PBXNativeTarget "SGPhotoPickerControllerExampleUITests" */;
 			buildPhases = (
-				1EB04A351CFE7F7D00A839CB /* Sources */,
-				1EB04A361CFE7F7D00A839CB /* Frameworks */,
-				1EB04A371CFE7F7D00A839CB /* Resources */,
+				1E124F2D1D7FAA59005FD093 /* Sources */,
+				1E124F2E1D7FAA59005FD093 /* Frameworks */,
+				1E124F2F1D7FAA59005FD093 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1EB04A3B1CFE7F7D00A839CB /* PBXTargetDependency */,
+				1E124F331D7FAA59005FD093 /* PBXTargetDependency */,
 			);
 			name = SGPhotoPickerControllerExampleUITests;
 			productName = SGPhotoPickerControllerExampleUITests;
-			productReference = 1EB04A391CFE7F7D00A839CB /* SGPhotoPickerControllerExampleUITests.xctest */;
+			productReference = 1E124F311D7FAA59005FD093 /* SGPhotoPickerControllerExampleUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		1EB04A0D1CFE7F7D00A839CB /* Project object */ = {
+		1E124F0A1D7FAA59005FD093 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
-				ORGANIZATIONNAME = "Igor Anany";
+				ORGANIZATIONNAME = "7 glyphs Ltd.";
 				TargetAttributes = {
-					1EB04A141CFE7F7D00A839CB = {
+					1E124F111D7FAA59005FD093 = {
 						CreatedOnToolsVersion = 7.3;
 					};
-					1EB04A2D1CFE7F7D00A839CB = {
+					1E124F251D7FAA59005FD093 = {
 						CreatedOnToolsVersion = 7.3;
-						TestTargetID = 1EB04A141CFE7F7D00A839CB;
+						TestTargetID = 1E124F111D7FAA59005FD093;
 					};
-					1EB04A381CFE7F7D00A839CB = {
+					1E124F301D7FAA59005FD093 = {
 						CreatedOnToolsVersion = 7.3;
-						TestTargetID = 1EB04A141CFE7F7D00A839CB;
+						TestTargetID = 1E124F111D7FAA59005FD093;
 					};
 				};
 			};
-			buildConfigurationList = 1EB04A101CFE7F7D00A839CB /* Build configuration list for PBXProject "SGPhotoPickerControllerExample" */;
+			buildConfigurationList = 1E124F0D1D7FAA59005FD093 /* Build configuration list for PBXProject "SGPhotoPickerControllerExample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -240,37 +224,37 @@
 				en,
 				Base,
 			);
-			mainGroup = 1EB04A0C1CFE7F7D00A839CB;
-			productRefGroup = 1EB04A161CFE7F7D00A839CB /* Products */;
+			mainGroup = 1E124F091D7FAA59005FD093;
+			productRefGroup = 1E124F131D7FAA59005FD093 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1EB04A141CFE7F7D00A839CB /* SGPhotoPickerControllerExample */,
-				1EB04A2D1CFE7F7D00A839CB /* SGPhotoPickerControllerExampleTests */,
-				1EB04A381CFE7F7D00A839CB /* SGPhotoPickerControllerExampleUITests */,
+				1E124F111D7FAA59005FD093 /* SGPhotoPickerControllerExample */,
+				1E124F251D7FAA59005FD093 /* SGPhotoPickerControllerExampleTests */,
+				1E124F301D7FAA59005FD093 /* SGPhotoPickerControllerExampleUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1EB04A131CFE7F7D00A839CB /* Resources */ = {
+		1E124F101D7FAA59005FD093 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1EB04A281CFE7F7D00A839CB /* LaunchScreen.storyboard in Resources */,
-				1EB04A251CFE7F7D00A839CB /* Assets.xcassets in Resources */,
-				1EB04A231CFE7F7D00A839CB /* Main.storyboard in Resources */,
+				1E124F201D7FAA59005FD093 /* LaunchScreen.storyboard in Resources */,
+				1E124F1D1D7FAA59005FD093 /* Assets.xcassets in Resources */,
+				1E124F1B1D7FAA59005FD093 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1EB04A2C1CFE7F7D00A839CB /* Resources */ = {
+		1E124F241D7FAA59005FD093 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1EB04A371CFE7F7D00A839CB /* Resources */ = {
+		1E124F2F1D7FAA59005FD093 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -280,61 +264,60 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1EB04A111CFE7F7D00A839CB /* Sources */ = {
+		1E124F0E1D7FAA59005FD093 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1EB04A201CFE7F7D00A839CB /* ViewController.m in Sources */,
-				1EB04A1D1CFE7F7D00A839CB /* AppDelegate.m in Sources */,
-				1EB04A4E1CFE802D00A839CB /* SGPhotoPickerController.m in Sources */,
-				1EB04A1A1CFE7F7D00A839CB /* main.m in Sources */,
+				1E124F181D7FAA59005FD093 /* ViewController.swift in Sources */,
+				1E124F161D7FAA59005FD093 /* AppDelegate.swift in Sources */,
+				1E124F491D7FABA3005FD093 /* SGPhotoPickerController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1EB04A2A1CFE7F7D00A839CB /* Sources */ = {
+		1E124F221D7FAA59005FD093 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1EB04A331CFE7F7D00A839CB /* SGPhotoPickerControllerExampleTests.m in Sources */,
+				1E124F2B1D7FAA59005FD093 /* SGPhotoPickerControllerExampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1EB04A351CFE7F7D00A839CB /* Sources */ = {
+		1E124F2D1D7FAA59005FD093 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1EB04A3E1CFE7F7D00A839CB /* SGPhotoPickerControllerExampleUITests.m in Sources */,
+				1E124F361D7FAA59005FD093 /* SGPhotoPickerControllerExampleUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1EB04A301CFE7F7D00A839CB /* PBXTargetDependency */ = {
+		1E124F281D7FAA59005FD093 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1EB04A141CFE7F7D00A839CB /* SGPhotoPickerControllerExample */;
-			targetProxy = 1EB04A2F1CFE7F7D00A839CB /* PBXContainerItemProxy */;
+			target = 1E124F111D7FAA59005FD093 /* SGPhotoPickerControllerExample */;
+			targetProxy = 1E124F271D7FAA59005FD093 /* PBXContainerItemProxy */;
 		};
-		1EB04A3B1CFE7F7D00A839CB /* PBXTargetDependency */ = {
+		1E124F331D7FAA59005FD093 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1EB04A141CFE7F7D00A839CB /* SGPhotoPickerControllerExample */;
-			targetProxy = 1EB04A3A1CFE7F7D00A839CB /* PBXContainerItemProxy */;
+			target = 1E124F111D7FAA59005FD093 /* SGPhotoPickerControllerExample */;
+			targetProxy = 1E124F321D7FAA59005FD093 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1EB04A211CFE7F7D00A839CB /* Main.storyboard */ = {
+		1E124F191D7FAA59005FD093 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1EB04A221CFE7F7D00A839CB /* Base */,
+				1E124F1A1D7FAA59005FD093 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		1EB04A261CFE7F7D00A839CB /* LaunchScreen.storyboard */ = {
+		1E124F1E1D7FAA59005FD093 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1EB04A271CFE7F7D00A839CB /* Base */,
+				1E124F1F1D7FAA59005FD093 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -342,7 +325,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		1EB04A401CFE7F7D00A839CB /* Debug */ = {
+		1E124F381D7FAA59005FD093 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -379,14 +362,15 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		1EB04A411CFE7F7D00A839CB /* Release */ = {
+		1E124F391D7FAA59005FD093 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -417,78 +401,76 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		1EB04A431CFE7F7D00A839CB /* Debug */ = {
+		1E124F3B1D7FAA59005FD093 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SGPhotoPickerControllerExample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "--glyphs-Ltd..SGPhotoPickerControllerExample";
+				PRODUCT_BUNDLE_IDENTIFIER = com.7glyphs.SGPhotoPickerControllerExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		1EB04A441CFE7F7D00A839CB /* Release */ = {
+		1E124F3C1D7FAA59005FD093 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SGPhotoPickerControllerExample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "--glyphs-Ltd..SGPhotoPickerControllerExample";
+				PRODUCT_BUNDLE_IDENTIFIER = com.7glyphs.SGPhotoPickerControllerExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
-		1EB04A461CFE7F7D00A839CB /* Debug */ = {
+		1E124F3E1D7FAA59005FD093 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = SGPhotoPickerControllerExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "--glyphs-Ltd..SGPhotoPickerControllerExampleTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.7glyphs.SGPhotoPickerControllerExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SGPhotoPickerControllerExample.app/SGPhotoPickerControllerExample";
 			};
 			name = Debug;
 		};
-		1EB04A471CFE7F7D00A839CB /* Release */ = {
+		1E124F3F1D7FAA59005FD093 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = SGPhotoPickerControllerExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "--glyphs-Ltd..SGPhotoPickerControllerExampleTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.7glyphs.SGPhotoPickerControllerExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SGPhotoPickerControllerExample.app/SGPhotoPickerControllerExample";
 			};
 			name = Release;
 		};
-		1EB04A491CFE7F7D00A839CB /* Debug */ = {
+		1E124F411D7FAA59005FD093 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = SGPhotoPickerControllerExampleUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "--glyphs-Ltd..SGPhotoPickerControllerExampleUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.7glyphs.SGPhotoPickerControllerExampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = SGPhotoPickerControllerExample;
 			};
 			name = Debug;
 		};
-		1EB04A4A1CFE7F7D00A839CB /* Release */ = {
+		1E124F421D7FAA59005FD093 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = SGPhotoPickerControllerExampleUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "--glyphs-Ltd..SGPhotoPickerControllerExampleUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.7glyphs.SGPhotoPickerControllerExampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = SGPhotoPickerControllerExample;
 			};
@@ -497,43 +479,40 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1EB04A101CFE7F7D00A839CB /* Build configuration list for PBXProject "SGPhotoPickerControllerExample" */ = {
+		1E124F0D1D7FAA59005FD093 /* Build configuration list for PBXProject "SGPhotoPickerControllerExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1EB04A401CFE7F7D00A839CB /* Debug */,
-				1EB04A411CFE7F7D00A839CB /* Release */,
+				1E124F381D7FAA59005FD093 /* Debug */,
+				1E124F391D7FAA59005FD093 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1EB04A421CFE7F7D00A839CB /* Build configuration list for PBXNativeTarget "SGPhotoPickerControllerExample" */ = {
+		1E124F3A1D7FAA59005FD093 /* Build configuration list for PBXNativeTarget "SGPhotoPickerControllerExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1EB04A431CFE7F7D00A839CB /* Debug */,
-				1EB04A441CFE7F7D00A839CB /* Release */,
+				1E124F3B1D7FAA59005FD093 /* Debug */,
+				1E124F3C1D7FAA59005FD093 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
-		1EB04A451CFE7F7D00A839CB /* Build configuration list for PBXNativeTarget "SGPhotoPickerControllerExampleTests" */ = {
+		1E124F3D1D7FAA59005FD093 /* Build configuration list for PBXNativeTarget "SGPhotoPickerControllerExampleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1EB04A461CFE7F7D00A839CB /* Debug */,
-				1EB04A471CFE7F7D00A839CB /* Release */,
+				1E124F3E1D7FAA59005FD093 /* Debug */,
+				1E124F3F1D7FAA59005FD093 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
-		1EB04A481CFE7F7D00A839CB /* Build configuration list for PBXNativeTarget "SGPhotoPickerControllerExampleUITests" */ = {
+		1E124F401D7FAA59005FD093 /* Build configuration list for PBXNativeTarget "SGPhotoPickerControllerExampleUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1EB04A491CFE7F7D00A839CB /* Debug */,
-				1EB04A4A1CFE7F7D00A839CB /* Release */,
+				1E124F411D7FAA59005FD093 /* Debug */,
+				1E124F421D7FAA59005FD093 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 1EB04A0D1CFE7F7D00A839CB /* Project object */;
+	rootObject = 1E124F0A1D7FAA59005FD093 /* Project object */;
 }
