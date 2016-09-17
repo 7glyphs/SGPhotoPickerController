@@ -9,15 +9,15 @@
 import UIKit
 
 protocol SGPhotoPickerControllerDelegate: class {
-    func photoPickerController(photoPickerController: SGPhotoPickerController, didPickImage image: UIImage)
+    func photoPickerController(_ photoPickerController: SGPhotoPickerController, didPickImage image: UIImage)
 }
 
 class SGPhotoPickerController: UIViewController {
     
     // Private properties
     
-    private var canGetFromCamera: Bool
-    private var controller: UIViewController
+    fileprivate var canGetFromCamera: Bool
+    fileprivate var controller: UIViewController
     
     // Public properties
     
@@ -28,27 +28,27 @@ class SGPhotoPickerController: UIViewController {
     
     // Private methods
     
-    private func takeControll() {
+    fileprivate func takeControll() {
         self.controller.addChildViewController(self)
     }
     
-    private func resignControll() {
+    fileprivate func resignControll() {
         self.removeFromParentViewController()
     }
     
-    private func openPicker(type: UIImagePickerControllerSourceType) {
+    fileprivate func openPicker(_ type: UIImagePickerControllerSourceType) {
         let picker = UIImagePickerController()
         picker.delegate = self
         picker.allowsEditing = true
         picker.sourceType = type
-        self.controller.presentViewController(picker, animated: true, completion: nil)
+        self.controller.present(picker, animated: true, completion: nil)
     }
     
     // Public methods
     
     init(controller: UIViewController) {
         self.controller = controller
-        self.canGetFromCamera = UIImagePickerController.isSourceTypeAvailable(.Camera)
+        self.canGetFromCamera = UIImagePickerController.isSourceTypeAvailable(.camera)
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -59,48 +59,48 @@ class SGPhotoPickerController: UIViewController {
     func pickPhoto() {
         self.takeControll()
         if self.libraryEnabled && self.cameraEnabled && self.canGetFromCamera {
-            let actionSheet = UIAlertController(title: "Add photo", message: nil, preferredStyle: .ActionSheet)
-            actionSheet.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: { (action) in
+            let actionSheet = UIAlertController(title: "Add photo", message: nil, preferredStyle: .actionSheet)
+            actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (action) in
                 self.resignControll()
-                actionSheet.dismissViewControllerAnimated(true, completion: nil)
+                actionSheet.dismiss(animated: true, completion: nil)
             }))
-            actionSheet.addAction(UIAlertAction(title: "Photo Library", style: .Default, handler: { (action) in
-                self.openPicker(.PhotoLibrary)
-                actionSheet.dismissViewControllerAnimated(true, completion: nil)
+            actionSheet.addAction(UIAlertAction(title: "Photo Library", style: .default, handler: { (action) in
+                self.openPicker(.photoLibrary)
+                actionSheet.dismiss(animated: true, completion: nil)
             }))
-            actionSheet.addAction(UIAlertAction(title: "Camera", style: .Default, handler: { (action) in
-                self.openPicker(.Camera)
-                actionSheet.dismissViewControllerAnimated(true, completion: nil)
+            actionSheet.addAction(UIAlertAction(title: "Camera", style: .default, handler: { (action) in
+                self.openPicker(.camera)
+                actionSheet.dismiss(animated: true, completion: nil)
             }))
-            self.controller.presentViewController(actionSheet, animated: true, completion: nil)
+            self.controller.present(actionSheet, animated: true, completion: nil)
         }
         else {
             if self.cameraEnabled && !self.canGetFromCamera {
                 print("Camera source is not available")
                 if self.libraryEnabled {
-                    self.openPicker(.PhotoLibrary)
+                    self.openPicker(.photoLibrary)
                 }
             }
             else if self.cameraEnabled && self.canGetFromCamera {
-                self.openPicker(.Camera)
+                self.openPicker(.camera)
             }
             else if self.libraryEnabled {
-                self.openPicker(.PhotoLibrary)
+                self.openPicker(.photoLibrary)
             }
         }
     }
 }
 
 extension SGPhotoPickerController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         let image = info[UIImagePickerControllerEditedImage] as! UIImage
         self.delegate?.photoPickerController(self, didPickImage: image)
-        picker.dismissViewControllerAnimated(true) {
+        picker.dismiss(animated: true) {
             self.resignControll()
         }
     }
-    func imagePickerControllerDidCancel(picker: UIImagePickerController) {
-        picker.dismissViewControllerAnimated(true) { 
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true) { 
             self.resignControll()
         }
     }

@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func pickPhotoPressed(sender: UIButton) {
+    @IBAction func pickPhotoPressed(_ sender: UIButton) {
         let photoPicker = SGPhotoPickerController(controller: self)
         photoPicker.delegate = self
         photoPicker.pickPhoto()
@@ -30,7 +30,7 @@ class ViewController: UIViewController {
 
 }
 extension ViewController: SGPhotoPickerControllerDelegate {
-    func photoPickerController(photoPickerController: SGPhotoPickerController, didPickImage image: UIImage) {
+    func photoPickerController(_ photoPickerController: SGPhotoPickerController, didPickImage image: UIImage) {
         self.photoImageView.image = image
     }
 }
